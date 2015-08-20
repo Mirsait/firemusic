@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" href="">
   <meta name="viewport" content="width=device-width"> 
   <link href="style/style.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
 
@@ -14,47 +15,40 @@
 
   <div id="info-container">
     <img src="images/rosenrot.jpg">
-    <p id="group">Rammstein</p>
-    <p id="album">Rosenrot</p>
-    <p id="song">Rosenrot</p>
+    <p id="group">Group</p>
+    <p id="album">Album</p>
+    <p id="song">Song</p>
   </div>  
   <div id="audio-container">
-    <audio>
-    <source  src="playlist/03.Rosenrot.mp3"></source>
-  </audio>
+    <audio id="audio">
+      <source  src="playlist/Rosenrot.mp3"></source>
+    </audio>
+  </div>
+  <div id="bnt-play-time">      
+    <div id="play-time">00:00 / 00:00</div>
   </div>
   <div id="progress-container">
     <div id="progress"></div>
-  </div>
-  <div id="btn-container">    
-    <div id="bnt-play-time">      
-      <div id="play-time">00:00 / 00:00</div>
-    </div>
-    <div id="volume-container">
+  </div>        
+  <div id="volume-container">
       <div id="volume"></div>
     </div>
-    <button id="btn-play">play</button>
-    <button id="btn-stop">stop</button>
+  <div id="btn-container">
     <button id="btn-prev">prev</button>
+    <button id="btn-play">play</button>    
     <button id="btn-next">next</button>
     <button id="btn-playlist">list</button>
     <button id="btn-update">udate</button>
   </div>
-<div id="playlist">
-  <ul>
-    <li class="played">Sonne<span> 00:00 </span></li>
-    <li class="played">Ich will<span> 00:00 </span></li>
-    <li class="play-now">Rosenrot<span> 00:00 </span></li>
-    <li>Mein Herz brennt <span> 00:00 </span></li>
-      
-      
+  <div id="playlist">
+    <ul>
+      <li class="played">Sonne<span> 00:00 </span></li>
+      <li class="played">Ich will<span> 00:00 </span></li>
+      <li class="play-now">Rosenrot<span> 00:00 </span></li>
+      <li>Mein Herz brennt <span> 00:00 </span></li>
     </ul> 
+  </div>
 </div>
-
-</div>
-  
 </body>
-
 <script src="scripts/app.js"></script>
-
 </html>
