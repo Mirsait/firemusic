@@ -9,30 +9,49 @@
 </head>
 <body>
 
-<h1>FireMusic Player</h1>
+<div id="player">
+  <h1>FireMusic Player</h1>
 
-<div id="info_music">
-  <img src="">
-  <p id="group">Group</p>
-  <p id="album">Album</p>
-  <p id="song">Song</p>
-</div>
-
-<div id="panel">
-  <audio src="playlist/01. See You Soon.mp3" controls></audio>
-  <button class="prev">prev</button>
-  <button class="next">next</button>
-  <button class="playlist">list</button>
-  <button class="update">update</button>
-</div>
+  <div id="info-container">
+    <img src="images/rosenrot.jpg">
+    <p id="group">Rammstein</p>
+    <p id="album">Rosenrot</p>
+    <p id="song">Rosenrot</p>
+  </div>  
+  <div id="audio-container">
+    <audio>
+    <source  src="playlist/03.Rosenrot.mp3"></source>
+  </audio>
+  </div>
+  <div id="progress-container">
+    <div id="progress"></div>
+  </div>
+  <div id="btn-container">    
+    <div id="bnt-play-time">      
+      <div id="play-time">00:00 / 00:00</div>
+    </div>
+    <div id="volume-container">
+      <div id="volume"></div>
+    </div>
+    <button id="btn-play">play</button>
+    <button id="btn-stop">stop</button>
+    <button id="btn-prev">prev</button>
+    <button id="btn-next">next</button>
+    <button id="btn-playlist">list</button>
+    <button id="btn-update">udate</button>
+  </div>
 <div id="playlist">
   <ul>
-      <li>Song 1</li>
-      <li>Song 2</li>
+    <li class="played">Sonne<span> 00:00 </span></li>
+    <li class="played">Ich will<span> 00:00 </span></li>
+    <li class="play-now">Rosenrot<span> 00:00 </span></li>
+    <li>Mein Herz brennt <span> 00:00 </span></li>
+      
+      
     </ul> 
 </div>
 
-
+</div>
   
 </body>
 
