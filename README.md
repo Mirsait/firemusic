@@ -1,2 +1,2 @@
-# musicfire
+# firemusic
 Music player for FirefoxOS
