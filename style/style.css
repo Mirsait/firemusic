@@ -5,40 +5,88 @@
 html, body {
 	width: 100%;
 }
-body {
-	background-color: #586675;/*#556355;*/
-	border: 1px solid #ddd;
-	padding: 2px;
-	margin:2px;
-	font-size: 20px;
+body {	
+	font-size: 16px;
+	background-color: #556355;
 }
-h1{
+#player{
+	border: 1px solid #ddd;	
+	background-color: #556355;
+	width: 280px;/*100%;	*/
+	padding: 7px;
+}
+#player h1{
 	color: #ddd;
 	font-size: 14px;
 }
-#info_music{
+#info-container{
 	border: 1px solid #777;
+	padding: 2px;
 }
-#info_music img {
+#info-container img {
 	height: 150px;
 	width: 150px;
 	background-color: #556355;
 	padding: 1px;
-	border: 1px solid #fff;
+	border: 1px solid #555;
 	position: relative;	
 }
-#info_music p {
-	display: block;
+#info-container p {	
+	color: #ddd;
+}
+#progress-container{
+	margin-top: 5px;		
+	margin-bottom: 5px;
+	background-color: #ddd;		
+}
+#progress{
+	height: 7px;
+	width: 27%;
+	background-color: #336;	
+}
+#play-time{
+	font-size: 14px;
 	color: #ddd;
 }
 #playlist{
-	margin-top: 10px;
+	background-color: #557755;	
+	color: #222;
 	border: 1px solid darkblue;
+	font-size: 14px;
 }
-#panel button {
-	width: 50px;
-	height: 50px;
+#playlist ul{
+	overflow: auto;
+}
+#playlist li{
+	display: block;
+	padding: 5px 7px;
+
+}
+#playlist li:hover{
+	background-color: #556355;
+}
+#playlist span{
+	float: right;	
+}
+.played{
+	color: #999;
+}
+.play-now{
+	color: #ddd;
+}
+
+#btn-container button {
+	font-size: 12px;
+	width: 35px;
+	height: 35px;
+	margin:5px 0 10px; 
 	text-align: center;
 	border-radius: 25px;
+	border: 1px solid #444;
+	background-color: #555566;
+}
+#btn-container button:hover{
+	background-color: #557755;
+	text-shadow:0px 0px 4px #fff;
 }
 
