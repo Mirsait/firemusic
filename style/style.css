@@ -7,67 +7,83 @@ html, body {
 }
 body {	
 	font-size: 16px;
-	background-color: #556355;
+	background-color: #666;/*#556355;*/
 }
 #player{
 	border: 1px solid #ddd;	
 	background-color: #556355;
-	width: 280px;/*100%;	*/
+	width: 280px;/*100%;*/
 	padding: 7px;
+	user-select: none;
+	-moz-user-select: none;
 }
-#player h1{
-	color: #ddd;
-	font-size: 14px;
-}
+	#player h1{
+		color: #ddd;
+		font-size: 14px;
+	}
+
 #info-container{
 	border: 1px solid #777;
 	padding: 2px;
 }
-#info-container img {
-	height: 150px;
-	width: 150px;
-	background-color: #556355;
-	padding: 1px;
-	border: 1px solid #555;
-	position: relative;	
-}
-#info-container p {	
-	color: #ddd;
-}
+	#info-container img {
+		height: 150px;
+		width: 150px;
+		background-color: #556355;
+		padding: 1px;
+		border: 1px solid #555;
+		position: relative;	
+	}
+	#info-container p {	
+		color: #ddd;
+	}
+
 #progress-container{
 	margin-top: 5px;		
 	margin-bottom: 5px;
-	background-color: #ddd;		
+	background-color: #ddd;
 }
-#progress{
-	height: 7px;
-	width: 27%;
-	background-color: #336;	
+	#progress{
+		height: 7px;
+		width: 27%;
+		background-color: #336;	
+	}
+#volume-container{
+	margin: 5px 0;
+	width: 50%;
+	background-color: #ddd;	
 }
+	#volume{
+		height: 7px;
+		width: 75%;
+		background-color: #336;
+	}
+
 #play-time{
 	font-size: 14px;
 	color: #ddd;
+	margin-top: 5px;
 }
+
 #playlist{
 	background-color: #557755;	
 	color: #222;
 	border: 1px solid darkblue;
 	font-size: 14px;
 }
-#playlist ul{
-	overflow: auto;
-}
-#playlist li{
-	display: block;
-	padding: 5px 7px;
-
-}
-#playlist li:hover{
-	background-color: #556355;
-}
-#playlist span{
-	float: right;	
-}
+	#playlist ul{
+		overflow: auto;
+	}
+	#playlist li{
+		display: block;
+		padding: 5px 7px;
+	}
+	#playlist li:hover{
+		background-color: #556355;
+	}
+	#playlist span{
+		float: right;	
+	}
 .played{
 	color: #999;
 }
@@ -83,10 +99,14 @@ body {
 	text-align: center;
 	border-radius: 25px;
 	border: 1px solid #444;
-	background-color: #555566;
+	background-color: #555566;	
+	color: #ddd;
 }
-#btn-container button:hover{
-	background-color: #557755;
-	text-shadow:0px 0px 4px #fff;
+	#btn-container button:hover{
+		background-color: #557755;
+		color: #336;
+		text-shadow:0px 0px 3px #ddd;
+	}
+button, #progress-container, #volume-container{
+	cursor: pointer;
 }
-
