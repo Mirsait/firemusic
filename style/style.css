@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+}
+body {
+	background-color: #586675;/*#556355;*/
+	border: 1px solid #ddd;
+	padding: 2px;
+	margin:2px;
+	font-size: 20px;
+}
+h1{
+	color: #ddd;
+	font-size: 14px;
+}
+#info_music{
+	border: 1px solid #777;
+}
+#info_music img {
+	height: 150px;
+	width: 150px;
+	background-color: #556355;
+	padding: 1px;
+	border: 1px solid #fff;
+	position: relative;	
+}
+#info_music p {
+	display: block;
+	color: #ddd;
+}
+#playlist{
+	margin-top: 10px;
+	border: 1px solid darkblue;
+}
+#panel button {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 25px;
+}
+
